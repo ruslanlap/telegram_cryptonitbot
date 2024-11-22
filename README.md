@@ -169,7 +169,3 @@ CryptonitBot_V2/
 ## 📄 License
 
 This project is licensed under the MIT License.
-
---- 
-
-This adds a clear, detailed section on AWS configuration and fits seamlessly into your README.
