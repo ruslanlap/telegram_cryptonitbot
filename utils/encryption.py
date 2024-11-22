@@ -1,10 +1,14 @@
 # utils/encryption.py
+
 import os
 import base64
+import logging
 from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 from cryptography.hazmat.backends import default_backend
 from cryptography.hazmat.primitives import padding, hashes
 from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
+
+logger = logging.getLogger(__name__)
 
 def generate_key(password, salt):
     kdf = PBKDF2HMAC(
@@ -38,7 +42,11 @@ def decrypt(encrypted_message, password):
     decryptor = cipher.decryptor()
     unpadder = padding.PKCS7(128).unpadder()
     plaintext_padded = decryptor.update(encrypted[32:]) + decryptor.finalize()
-    plaintext = unpadder.update(plaintext_padded) + unpadder.finalize()
+    try:
+        plaintext = unpadder.update(plaintext_padded) + unpadder.finalize()
+    except ValueError as e:
+        logger.error(f"Error during decryption: {e}")
+        raise ValueError("Invalid padding bytes")
     return plaintext.decode('utf-8')
 
 def escape_markdown_v2(text):

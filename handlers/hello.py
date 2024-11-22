@@ -10,4 +10,4 @@ async def hello_command(message: types.Message):
     await message.reply(response, reply_markup=create_main_menu())
 
 def register_hello_handlers(dp: Dispatcher):
-    dp.register_message_handler(hello_command, commands=['hello'])
+    dp.register_message_handler(hello_command, commands=['hello', 'привіт'])

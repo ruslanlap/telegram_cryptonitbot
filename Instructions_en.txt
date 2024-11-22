@@ -1,0 +1,38 @@
+===============================================
+📜 INSTRUCTIONS FOR ENCRYPTED_MESSAGE.TXT FILE 🔒
+===============================================
+
+🎯 DESCRIPTION
+-----------
+This file holds a secret message 🤫 and the magic key 🗝️ to unlock it!
+
+📋 PREREQUISITES
+-------------
+- Telegram bot sidekick 🤖 with decryption superpowers 🦸‍♂️
+
+🪜 STEP-BY-STEP INSTRUCTIONS
+-------------------------
+1. Open the mysterious Encrypted_Message.txt file 📂 in your trusty text editor ⌨️
+2. Uncover the hidden password 🕵️, it will look like this:
+   Password: my_secure_password
+3. Spot the jumbled up secret message 🙈 (Base64 gibberish) after the password
+4. Time to decrypt with your Telegram bot buddy 🤖:
+   - summon it with the /decrypt or /d spell 🪄
+   - whisper the password when the bot asks 🗣️
+   - reveal the encrypted message and send it to the bot 📨
+   - the bot will magically reply with the decrypted text! ✨
+
+🌟 EXAMPLE
+-------
+Password: my_secure_password
+Encrypted Message:
+U2FsdGVkX1+Pb1eInF5/6XtLpHh5kOr7x5u6kTcW+hg=
+
+🧙 ADDITIONAL TIPS
+---------------
+- Guard the password like a treasure 💰
+- Protect the file as if it were the One Ring 💍
+
+===============================================
+Crafted with ❤️ by @ruslanlap (https://github.com/ruslanlap)
+===============================================
